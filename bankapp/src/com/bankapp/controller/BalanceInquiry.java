@@ -9,7 +9,7 @@ public class BalanceInquiry extends Controller {
 		System.out.println("For Balance Inquiry Enter name: ");
 		String s = scn.next();
 		try {
-			if (user.name.contentEquals(s)) {
+			if (user.name.equalsIgnoreCase(s)) {
 				System.out.println("Balance: " + user.balance);
 				modeCall();
 			} else {
